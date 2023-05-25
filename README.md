@@ -11,7 +11,7 @@ npm install @teamthunderfoot/mobile-height-adjust
 ## Usage
 
 ```sh
-import MobileHeightAdjust from "./MobileHeightAdjust";
+import MobileHeightAdjust from "@teamthunderfoot/mobile-height-adjust";
 
 class Page {
   constructor() {
