@@ -1,6 +1,6 @@
 # mobile-height-adjust
 
-The `Mobile Height Adjust` package adjusts the height of the mobile screen (particularly on iOS devices) by subtracting the height of the navigation bar, ensuring that the content occupies the full viewport height.
+The `Mobile Height Adjust` package adjusts the height of the mobile screen by subtracting the height of the navigation bar, ensuring that the content occupies the full viewport height.
 
 ## Installation
 
@@ -29,6 +29,16 @@ new Page();
 ```
 
 The `mobile-height-adjust` package automatically sets the CSS variable `--vh` to adjust the height of the mobile screen, excluding the height of the navigation bar. This ensures that the content fits within the visible viewport.
+
+To make the adjustment work properly, you need to apply the following CSS rule to the component that should occupy the full viewport height:
+
+```sh
+.your-component {
+  height: calc(var(--vh, 1vh) * 100);
+}
+```
+
+This rule calculates the height based on the adjusted --vh value, allowing the component to fill the entire viewport height.
 
 ## Destroy
 
