@@ -8,12 +8,12 @@ class Page {
   init() {
     const mobileHeightAdjust = new MobileHeightAdjust();
 
-    document
-      .querySelector(".js-mobile-height")
-      .addEventListener("click", (e) => {
-        e.preventDefault();
-        mobileHeightAdjust.destroy();
-      });
+    // document
+    //   .querySelector(".js-mobile-height")
+    //   .addEventListener("click", (e) => {
+    //     e.preventDefault();
+    //     mobileHeightAdjust.destroy();
+    //   });
   }
   events() {}
 }

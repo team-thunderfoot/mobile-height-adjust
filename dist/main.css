@@ -6,14 +6,16 @@ html {
   background: #1d1611;
   height: 100vh;
   padding: 120px 16px 0px;
-
-  @media all and (max-width: 580px) {
-    height: calc(var(--vh, 1vh) * 100);
-  }
 }
 
 .c--hero-a__title {
   font-size: 3.5rem;
   font-weight: bold;
   color: #fff;
+}
+
+@media all and (max-width: 580px) {
+  .c--hero-a {
+    height: calc(var(--vh, 1vh) * 100);
+  }
 }
