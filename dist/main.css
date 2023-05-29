@@ -1,3 +1,7 @@
+html {
+  overscroll-behavior: none;
+}
+
 .c--hero-a {
   background: #1d1611;
   height: 100vh;
